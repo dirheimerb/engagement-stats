@@ -1,0 +1,40 @@
+<template>
+	<lightning-card variant='narrow'>
+		<div class="slds-grid slds-gutters slds-grid_align-spread slds-m-around_x-small">
+			<div class="slds-col">
+				<span>
+					<strong>
+						Sends
+					</strong>
+					</span>
+			</div>
+			<div class="slds-col">
+				<span>
+					<strong>Opens</strong>
+					</span>
+			</div>
+			<div class="slds-col">
+				<span>
+					<strong>
+						Open Rate
+					</strong>
+				</span>
+			</div>
+		</div>
+		<div class="slds-grid slds-gutters slds-grid_align-spread slds-m-around_x-small">
+			<div class="slds-col">
+				<span title="5%">{sends}</span>
+			</div>
+			<div class="slds-col">
+				<span>{opens}</span>
+			</div>
+			<div class="slds-col">
+				<span>{openRate}</span>
+			</div>
+		</div>
+
+		<div slot="footer">
+			<em>All email data is within the last 12 months.</em>
+		</div>
+	</lightning-card>
+</template>
